@@ -4,33 +4,42 @@ let package = Package(
   name: "WebexConnect",
   products: [
       .library(
-          name: "WebexConnectCoreSDKFull",
-          targets: ["WebexConnectCoreSDKFull"]
+          name: "WebexConnectCore",
+          targets: ["WebexConnectCore"]
       ),
       .library(
-          name: "WebexConnectCoreSDKLite",
-          targets: ["WebexConnectCoreSDKLite"]
+          name: "WebexConnectPush",
+          targets: ["WebexConnectPush"]
+      ),
+        .library(
+          name: "WebexConnectInAppMessaging",
+          targets: ["WebexConnectInAppMessaging"]
       ),
       .library(
           name: "WebexConnectNotificationServiceExtension",
-          targets: ["IMIconnectNotificationServiceExtension"]
+          targets: ["WebexConnectNotificationServiceExtension"]
       )
   ],
   targets: [
       .binaryTarget(
-          name: "WebexConnectCoreSDKFull",
-          url: "https://github.com/balaobulreddy/BalaTestFramework/releases/download/2.19.7/WebexConnectCoreSDKFull_SPM.zip",
-          checksum: "b6bc481a331aea31c266c89340f2999412a3af529538382d771ef34b3a8317d3"
+          name: "WebexConnectCore",
+          url: "https://github.com/balaobulreddy/BalaTestFramework/releases/download/3.0.1/WebexConnectCore.zip",
+          checksum: "7fdf9d947c0b9e57b54a82efcad92e04c595030ac9e7858ae052edba690be3f1"
       ),
       .binaryTarget(
-          name: "WebexConnectCoreSDKLite",
-          url: "https://github.com/balaobulreddy/BalaTestFramework/releases/download/2.19.7/WebexConnectCoreSDKLite_SPM.zip",
-          checksum: "247d646a9bccf1f9a33a2e598def004f0f50195a2c34a29a1d99c4e6923ac5d4"
+          name: "WebexConnectPush",
+          url: "https://github.com/balaobulreddy/BalaTestFramework/releases/download/3.0.1/WebexConnectPush.zip",
+          checksum: "cd72609d139126ecb45f9cf22f63fcb2575732854519c93d828ba13b671bb15c"
+      ),
+    .binaryTarget(
+          name: "WebexConnectInAppMessaging",
+          url: "https://github.com/balaobulreddy/BalaTestFramework/releases/download/3.0.1/WebexConnectInAppMessaging.zip",
+          checksum: "5d3fcb505d4b0c260aa614c8ccb66e19961c34a76145980ec4a0e9822f28b782"
       ),
       .binaryTarget(
-          name: "IMIconnectNotificationServiceExtension",
-          url: "https://github.com/balaobulreddy/BalaTestFramework/releases/download/2.19.7/WebexConnectNotificationServiceExtension.zip",
-          checksum: "220139acaaea839e7e9cb3b8d0e1be04231f13553f6cf108a795c8ef8cc6adf8"
+          name: "WebexConnectNotificationServiceExtension",
+          url: "https://github.com/balaobulreddy/BalaTestFramework/releases/download/3.0.1/WebexConnectNotificationServiceExtension.zip",
+          checksum: "a2bc384defb4de1a9c97972011ac8b83611f4e45d6c98bd7a997acfb1f064cd8"
       )
   ]
 )
